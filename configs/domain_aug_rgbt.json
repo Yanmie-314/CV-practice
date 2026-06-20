@@ -1,0 +1,1 @@
+{"seed":2026,"fusion":"rgbt","probabilities":{"brightness_contrast_gamma":0.75,"tir_contrast":0.6,"blur":0.3,"noise":0.25,"jpeg":0.25},"brightness_delta_range":[4,28],"contrast_range":[0.889,1.087],"gamma_range":[0.85,1.2],"tir_brightness_delta_range":[-32,-12],"tir_contrast_range":[0.7,0.845],"blur_kernel_choices":[3],"noise_std_range":[1.0,6.0],"jpeg_quality_range":[65,92]}

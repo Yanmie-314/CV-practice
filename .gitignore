@@ -1,0 +1,125 @@
+# -----------------------------------------------------------------------------
+# Git ignore for GAIIC2024 Drone RGB-T Object Detection Project
+# -----------------------------------------------------------------------------
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+.env
+.venv/
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+# Model weights / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.weights
+*.onnx
+*.engine
+*.tflite
+*.mlmodel
+*.safetensors
+
+# Training outputs
+runs/
+work_dirs/
+logs/
+output/
+outputs/
+checkpoints/
+
+# Generated visualizations and analysis
+visualizations/*/
+analysis/loss_curves/
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tif
+*.tiff
+*.gif
+
+# Datasets (large raw data and generated splits)
+datasets/*/
+GAIIC2024-赛道1-目标检测任务/
+
+# Competition submissions and intermediate fusion results
+submissions/
+
+# Archives and temporary files
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.tmp
+*.temp
+
+# Office / binary documents
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pptx
+*.ppt
+*.pdf
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# mmcv third-party code (kept as optional external dependency)
+mmcv/
+
+# Keep directory placeholders
+!.gitkeep

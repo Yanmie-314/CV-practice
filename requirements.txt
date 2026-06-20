@@ -1,0 +1,15 @@
+# Project dependencies for the RGB-T YOLO experiments.
+# Python: 3.10
+#
+# Install CUDA PyTorch first:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+
+ultralytics==8.4.67
+opencv-python==4.13.0
+pycocotools
+matplotlib==3.10.9
+tqdm
+pillow==12.2.0
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.3.3
