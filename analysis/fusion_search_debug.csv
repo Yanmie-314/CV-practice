@@ -1,0 +1,2 @@
+rank,ap,ap50,ap75,aps,apm,apl,ar100,detections,method,iou_thr,score_thr,primary_count,weights,inputs
+1,0.6297759513536603,0.8209619910466867,0.7512923182368961,0.26490126575873735,0.6288182720253669,0.8143310778107261,0.711206900294283,86601,wbf,0.75,0.001,1,1.000 0.700,submissions\yolo11m_rgbt_aug_domain_w0_tta_val.json | submissions\gem_adapter_yolo_pretrained_fix_last_val.json

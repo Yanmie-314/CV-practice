@@ -171,7 +171,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--out", required=True)
     parser.add_argument("--method", choices=["wbf", "nms"], default="wbf")
     parser.add_argument("--iou-thr", type=float, default=0.65)
-    parser.add_argument("--score-thr", type=float, default=0.001)
+    parser.add_argument(
+        "--score-thr",
+        "--skip-box-thr",
+        dest="score_thr",
+        type=float,
+        default=0.001,
+        help="Drop input and fused detections below this score. --skip-box-thr is kept for WBF-style commands.",
+    )
     parser.add_argument("--max-per-image", type=int, default=300)
     parser.add_argument(
         "--primary-count",

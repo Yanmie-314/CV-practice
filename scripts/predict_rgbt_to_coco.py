@@ -32,6 +32,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-det", type=int, default=300)
     parser.add_argument("--device", default="0")
     parser.add_argument("--batch-size", type=int, default=1)
+    parser.add_argument(
+        "--augment",
+        action="store_true",
+        help="Enable Ultralytics test-time augmentation during prediction.",
+    )
+    parser.add_argument(
+        "--agnostic-nms",
+        action="store_true",
+        help="Use class-agnostic NMS during prediction.",
+    )
     return parser.parse_args()
 
 
@@ -58,6 +68,8 @@ def main() -> None:
             iou=args.iou,
             max_det=args.max_det,
             device=args.device,
+            augment=args.augment,
+            agnostic_nms=args.agnostic_nms,
             stream=False,
             verbose=False,
         )
